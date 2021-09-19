@@ -1,0 +1,45 @@
+.home{
+    display: grid;
+    position: relative;
+    width: 1440px;
+    height: 6188px;
+    background-color: #111111;
+    color: #FFFFFF;
+    }
+    
+    /* Hero Space */
+    .intro{
+    display: flex;
+    width: 673px;
+    height: 160.12px;
+    left: 411px;
+    top: 298.5px;
+    }
+    
+    image{/* Lady Illustration */
+    display: flex;
+    left: 25.47%;
+    right: 23.07%;
+    top: 23.87%;
+    bottom: 6.4%;
+    background: #FFFFFF;
+    }
+    
+    
+    /* Hi, */
+    .hi{
+    display: flex;
+    position: absolute;
+    width: 107.76px;
+    height: 37.16px;
+    left: 693.38px;
+    top: 298.5px;
+    
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 126%; /* or 35px */
+    text-align: center;
+    color: #ca3a3a;
+    }
