@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF;
 }
 
 li,
@@ -18,13 +17,14 @@ a {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 30px 10%;
 }
 
 .logo {
-    cursor: pointer;
+    cursor: ;
+    justify-content: flex-start;
 }
 
 .socials {
@@ -50,37 +50,16 @@ header {
     transform: translate(1, 1);
 }
 
-button {
-    padding: 9px 25px;
-    background-color: rgba(255, 164, 26, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0;
+.banner-card {
+    display: inline-flexbox;
+    justify-content: center;
+    height: 50px;
 }
 
-button:hover {
-    background-color: rgba(255, 164, 26, .8)
-}
-
-p {
+.banner-text h1 {
     position: absolute;
-    width: 468px;
-    height: 43px;
-    left: 513.38px;
-    top: 415.62px;
-    font-family: Chakra Petch;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 152.4%;
-    /* identical to box height, or 43px */
-    text-align: center;
-    color: #0D0D0D;
-}
-
-h1 {
-    position: absolute;
+    top: 25%;
+    padding: 20px;
     width: 674px;
     height: 76px;
     left: 387px;
@@ -93,4 +72,41 @@ h1 {
     /* identical to box height, or 76px */
     text-align: center;
     color: #656579;
+}
+
+.banner-text p {
+    position: absolute;
+    top: 25%;
+    padding: 20px;
+    width: 674px;
+    height: 76px;
+    left: 387px;
+    top: 325.11px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 60px;
+    line-height: 126.78%;
+    /* identical to box height, or 76px */
+    text-align: center;
+    color: #656579;
+}
+
+.banner-card button {
+    padding: 9px 25px;
+    background-color: rgba(255, 164, 26, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+}
+
+.banner-card button:hover {
+    background-color: rgba(255, 164, 26, .8)
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
 }
